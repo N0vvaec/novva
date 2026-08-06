@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --novva-black: #f4f4f6;
+  --novva-white: #1a1a1d;
+  --novva-gray: #6b6572;
+  --novva-purple: #7c3aed;
+  --novva-pink: #db2777;
+  --novva-sky: #0284c7;
+  --novva-lavender: #6d28d9;
+  --novva-softblue: #2563eb;
+  --novva-deeppurple: #5e4b8b;
+
+  --background: var(--novva-black);
+  --foreground: var(--novva-white);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-novva-black: var(--novva-black);
+  --color-novva-white: var(--novva-white);
+  --color-novva-gray: var(--novva-gray);
+  --color-novva-purple: var(--novva-purple);
+  --color-novva-pink: var(--novva-pink);
+  --color-novva-sky: var(--novva-sky);
+  --color-novva-lavender: var(--novva-lavender);
+  --color-novva-softblue: var(--novva-softblue);
+  --color-novva-deeppurple: var(--novva-deeppurple);
+
+  --font-sans: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
