@@ -30,21 +30,30 @@ export function Footer() {
             Síguenos
           </h3>
           <ul className="mt-4 space-y-2 text-sm text-novva-gray">
-            <li>
-              <a className="transition-colors hover:text-novva-pink" href={site.instagram} target="_blank" rel="noopener noreferrer">
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a className="transition-colors hover:text-novva-sky" href={site.tiktok} target="_blank" rel="noopener noreferrer">
-                TikTok
-              </a>
-            </li>
-            <li>
-              <a className="transition-colors hover:text-novva-lavender" href={site.facebook} target="_blank" rel="noopener noreferrer">
-                Facebook
-              </a>
-            </li>
+            {site.instagram && (
+              <li>
+                <a className="transition-colors hover:text-novva-pink" href={site.instagram} target="_blank" rel="noopener noreferrer">
+                  Instagram
+                </a>
+              </li>
+            )}
+            {site.tiktok && (
+              <li>
+                <a className="transition-colors hover:text-novva-sky" href={site.tiktok} target="_blank" rel="noopener noreferrer">
+                  TikTok
+                </a>
+              </li>
+            )}
+            {site.facebook && (
+              <li>
+                <a className="transition-colors hover:text-novva-lavender" href={site.facebook} target="_blank" rel="noopener noreferrer">
+                  Facebook
+                </a>
+              </li>
+            )}
+            {!site.instagram && !site.tiktok && !site.facebook && (
+              <li className="text-novva-gray/70">Próximamente</li>
+            )}
           </ul>
         </div>
       </div>
