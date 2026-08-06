@@ -5,10 +5,10 @@ export const site = {
     "Ropa de hombre con estilo urbano nocturno, minimalista y exclusivo.",
   // Reemplaza con tu número de WhatsApp en formato internacional sin "+"
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "00000000000",
-  // Reemplaza con tus URLs de redes sociales
-  instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "https://instagram.com/novva",
-  tiktok: process.env.NEXT_PUBLIC_TIKTOK_URL ?? "https://tiktok.com/@novva",
-  facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL ?? "https://facebook.com/novva",
+  // Reemplaza con tus URLs de redes sociales (vacío = no mostrar)
+  instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || "",
+  tiktok: process.env.NEXT_PUBLIC_TIKTOK_URL || "",
+  facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || "",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contacto@novva.com",
   currency: "USD",
   currencySymbol: "$",
